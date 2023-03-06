@@ -34,15 +34,7 @@ $(document).keypress(function() {
     started = true;
   }
 });
-$("body").click(function() { 
-  if (!started) {
-    setTimeout(() => {
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
-    }, 500);
-  }
-});
+
 
 $(".btn").click(function() {
   var userChosenColour = $(this).attr("id");
